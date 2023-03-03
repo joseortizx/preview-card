@@ -1,0 +1,106 @@
+/* reset css */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+}
+html,
+body {
+  height: 100%;
+  background-color: #cecfc9;
+}
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+#root,
+#__next {
+  isolation: isolate;
+}
+/* custom properties */
+
+/* card center */
+.card {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #efefef;
+}
+/* card layout */
+.card {
+  border: 1px solid black;
+  border-radius: 8px;
+  width: 375px;
+  box-shadow: 5px 10px 20px;
+}
+.card-item {
+  padding: 5px 15px 5px 20px;
+  font-family: sans-serif;
+}
+.card-img {
+  width: 100%;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+.card-type {
+  margin-top: 20px;
+  font-size: 0.8rem;
+  font-weight: 200;
+}
+.card-title {
+  font-weight: 1000;
+  color: #276e90;
+}
+.card-description {
+  font-weight: 200;
+  font-size: 0.9rem;
+}
+.discount {
+  display: flex;
+  align-items: center;
+}
+.card-price {
+  font-family: fantasy;
+  font-size: 1.5rem;
+  color: #276e90;
+}
+.card-price-discount {
+  text-decoration: line-through;
+}
+.card-button {
+  margin: 20px;
+  background-color: #0a3143;
+  color: whitesmoke;
+  border-radius: 8px;
+  width: 90%;
+  font-weight: 700;
+  font-family: Verdana;
+  font-size: 0.85rem;
+}
