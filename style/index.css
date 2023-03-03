@@ -57,7 +57,8 @@ h6 {
 .card {
   border: 1px solid black;
   border-radius: 8px;
-  width: 375px;
+  min-width: 350px;
+  max-width: 580px;
   box-shadow: 5px 10px 20px;
 }
 .card-item {
@@ -65,9 +66,11 @@ h6 {
   font-family: sans-serif;
 }
 .card-img {
+  background-image: url("/img/cactus4cortado.png");
   width: 100%;
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
+  object-position: center;
 }
 .card-type {
   margin-top: 20px;
@@ -103,4 +106,28 @@ h6 {
   font-weight: 700;
   font-family: Verdana;
   font-size: 0.85rem;
+}
+/* media query especial para mostra imagen en column */
+@media (max-width: 850px) {
+  .card-img {
+    height: 240px;
+  }
+  .card-hijo {
+    width: 100%;
+  }
+}
+/* media query responsive design si bajo de 
+805px tiene que cambiar de layout */
+@media (min-width: 850px) {
+  .card {
+    display: flex;
+  }
+  .card-img {
+    background-image: url("/img/cactus4.png");
+    border-bottom-left-radius: 8px;
+    border-top-right-radius: 0px;
+  }
+  .card-hijo {
+    width: 50%;
+  }
 }
