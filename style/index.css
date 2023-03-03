@@ -66,7 +66,7 @@ h6 {
   font-family: sans-serif;
 }
 .card-img {
-  background-image: url("/img/cactus4cortado.png");
+  background-image: url("img/cactus4cortado.png");
   width: 100%;
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
@@ -123,7 +123,7 @@ h6 {
     display: flex;
   }
   .card-img {
-    background-image: url("/img/cactus4.png");
+    background-image: url("img/cactus4.png");
     border-bottom-left-radius: 8px;
     border-top-right-radius: 0px;
   }
