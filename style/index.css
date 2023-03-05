@@ -61,27 +61,27 @@ h6 {
   max-width: 580px;
   box-shadow: 5px 10px 20px;
 }
-.card-item {
+.card__item {
   padding: 5px 15px 5px 20px;
   font-family: sans-serif;
 }
-.card-img {
-  background-image: url(img/cactus4cortado.PNG);
+.card__img {
+  background-image: url(/img/cactus4cortado.png);
   width: 100%;
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
   object-position: center;
 }
-.card-type {
+.card__type {
   margin-top: 20px;
   font-size: 0.8rem;
   font-weight: 200;
 }
-.card-title {
+.card__title {
   font-weight: 1000;
   color: #276e90;
 }
-.card-description {
+.card__description {
   font-weight: 200;
   font-size: 0.9rem;
 }
@@ -89,15 +89,15 @@ h6 {
   display: flex;
   align-items: center;
 }
-.card-price {
+.card__price {
   font-family: fantasy;
   font-size: 1.5rem;
   color: #276e90;
 }
-.card-price-discount {
+.card__price--discount {
   text-decoration: line-through;
 }
-.card-button {
+.card__button {
   margin: 20px;
   background-color: #0a3143;
   color: whitesmoke;
@@ -109,10 +109,10 @@ h6 {
 }
 /* media query especial para mostra imagen en column */
 @media (max-width: 850px) {
-  .card-img {
+  .card__img {
     height: 240px;
   }
-  .card-hijo {
+  .card__hijo {
     width: 100%;
   }
 }
@@ -122,12 +122,12 @@ h6 {
   .card {
     display: flex;
   }
-  .card-img {
-    background-image: url(img/cactus4.PNG);
+  .card__img {
+    background-image: url(/img/cactus4.png);
     border-bottom-left-radius: 8px;
     border-top-right-radius: 0px;
   }
-  .card-hijo {
+  .card__hijo {
     width: 50%;
   }
 }
